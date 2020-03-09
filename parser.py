@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as BS
 
-r = requests.get("https://www.eldorado.ru/") #сайт с которого парсить
+r = requests.get("https://www.eldorado.ru/") #сайт с которого парсить (главное не забыть / после названия, а то не будет работать)
 print(r.status_code) #статус соединения
 html = BS(r.content, "html.parser")
 
